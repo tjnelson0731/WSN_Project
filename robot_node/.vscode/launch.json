@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (OpenOCD / ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+
+            /* ELF built by 'make' — contains DWARF debug symbols (-g -gdwarf-2) */
+            "executable": "${workspaceFolder}/build/ROBOT_NODE.elf",
+
+            /* STM32L452RE on a Nucleo board with on-board ST-Link */
+            "device": "STM32L452RE",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32l4x.cfg"
+            ],
+
+            /*
+             * After flashing, halt at the first instruction of main().
+             * Remove this line if you want execution to run free on attach.
+             */
+            "runToEntryPoint": "main",
+
+            /* Show peripheral registers in the XPERIPHERALS panel (optional) */
+            /* "svdFile": "${workspaceFolder}/STM32L452.svd", */
+
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "gateway_anchor",
+      "name": "gateway_anchor"
+    },
+    {
+      "path": "routing_anchor",
+      "name": "routing_anchor"
+    },
+    {
+      "path": "robot_esp",
+      "name": "robot_esp"
+    },
+    {
+      "path": "robot_node"
+    }
+  ],
+  "settings": {
+    // Workspace-level settings shared by all three projects.
+    // Per-project overrides (COM port, compile-commands-dir) live in
+    // each subfolder's .vscode/settings.json.
+  }
+}
