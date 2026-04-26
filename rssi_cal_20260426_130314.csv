@@ -1,0 +1,2 @@
+distance_m,n_samples,mean_rssi_dbm,std_rssi_db,mean_tx_dbm,mean_pl_db
+0.5,15,-20.47,0.5,0.0,20.47

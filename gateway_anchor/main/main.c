@@ -54,13 +54,13 @@
  * short address, so IDs only need to be distinct — not sequential.
  */
 #define ANCHOR_ID          0x00   /* uint8: unique ID for this anchor unit    */
-#define ANCHOR_X_CM        300    /* int16: X position in cm                  */
-#define ANCHOR_Y_CM        80    /* int16: Y position in cm                  */
+#define ANCHOR_X_CM        0      /* int16: X position in cm                  */
+#define ANCHOR_Y_CM        0      /* int16: Y position in cm                  */
 #define ANCHOR_Z_CM        100    /* int16: Z position in cm (mount height)   */
 #define ANCHOR_TX_POWER    0      /* int8:  TX power in dBm (signed)          */
 
 /* Beacon broadcast period — must be ≤ 65535 (uint16_t limit of scheduler alarm) */
-#define BEACON_INTERVAL_MS 5000
+#define BEACON_INTERVAL_MS 2000
 
 /* ---- Beacon payload ------------------------------------------------------- */
 
